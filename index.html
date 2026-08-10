@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Python Pro — Tutor Training | Kodland</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Python palette — Python blue + Python yellow on a cool neutral base */
+  --lime:#3776AB;--lime-d:#2C5F87;--lime-glow:rgba(55,118,171,.26);
+  --pink:#F5B93B;--pink-d:#DDA21F;--on-pink:#1A1400;--acc-t:#8A6511;
+  --ink:#101C2B;--ink2:#33455C;--muted:#7887A0;
+  --bg:#EEF3F9;--surface:#FFFFFF;--surface2:#F3F7FC;--border:#DAE4EF;
+  --text:var(--ink);--text2:var(--ink2);--text-muted:var(--muted);
+  --nav-bg:rgba(255,255,255,0.94);--nav-b:#DCE7F3;
+  --shadow:0 2px 12px rgba(16,38,70,.08);--shadow-h:0 8px 28px rgba(16,38,70,.16);
+  --r:14px;--rsm:8px;--rpill:999px;
+}
+[data-theme="dark"]{
+  --bg:#0C1219;--surface:#151C26;--surface2:#1B2430;--border:#2A3646;
+  --text:#E9EFF8;--text2:#A9B6CB;--text-muted:#6B7894;
+  --nav-bg:rgba(12,18,25,0.95);--nav-b:#2A3646;
+  --shadow:0 2px 16px rgba(0,0,0,.5);--shadow-h:0 8px 28px rgba(0,0,0,.55);
+  --lime:#4A9BD8;--lime-d:#3776AB;--lime-glow:rgba(74,155,216,.16);
+  --pink:#FFD43B;--pink-d:#F5B93B;--acc-t:#FFD43B;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:'Plus Jakarta Sans',sans-serif;
+  min-height:100vh;overflow-x:hidden;
+  transition:background .25s,color .25s;
+  display:flex;flex-direction:column;
+}
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:
+    linear-gradient(rgba(55,118,171,.045) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(55,118,171,.045) 1px,transparent 1px);
+  background-size:34px 34px;
+}
+/* NAV */
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 28px;height:62px;background:var(--nav-bg);backdrop-filter:blur(14px);
+  border-bottom:2px solid var(--nav-b);position:sticky;top:0;z-index:100;
+  transition:background .25s,border-color .25s;
+}
+.logo{display:flex;align-items:center;gap:8px;text-decoration:none;flex-shrink:0}
+.logo-mark{font-family:'Nunito',sans-serif;font-weight:900;font-size:20px;letter-spacing:-.5px;color:var(--ink);line-height:1}
+[data-theme="dark"] .logo-mark{color:var(--lime)}
+.logo-sub{font-family:'Nunito',sans-serif;font-weight:800;font-size:13px;color:var(--acc-t)}
+.logo-div{width:1px;height:16px;background:var(--border);margin:0 4px}
+.tbtn{
+  width:38px;height:38px;border-radius:var(--rpill);background:var(--surface);
+  border:2px solid var(--border);display:flex;align-items:center;justify-content:center;
+  font-size:16px;cursor:pointer;transition:all .15s;
+}
+.tbtn:hover{background:var(--lime);border-color:var(--lime-d)}
+/* HERO */
+.hero{padding:72px 40px 56px;text-align:center;position:relative;flex:1;display:flex;flex-direction:column;align-items:center}
+.hero::before{content:'';position:absolute;inset:0;bottom:40%;background:radial-gradient(ellipse 80% 60% at 50% -10%,var(--lime-glow) 0%,transparent 70%);pointer-events:none}
+.hero::after{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--lime-d),var(--lime),var(--pink));opacity:.7}
+.hero-inner{position:relative;max-width:680px;margin:0 auto;width:100%}
+.hero-icon{font-size:60px;display:block;margin-bottom:16px;filter:drop-shadow(0 4px 12px rgba(55,118,171,.35));animation:float 3s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@media(prefers-reduced-motion:reduce){.hero-icon{animation:none}}
+.eyebrow{display:inline-flex;align-items:center;gap:6px;background:var(--surface);border:2px solid var(--border);border-radius:var(--rpill);padding:5px 14px;font-family:'Nunito',sans-serif;font-size:12px;font-weight:900;color:var(--text2);margin-bottom:20px;text-transform:uppercase;letter-spacing:.8px}
+.hero h1{font-family:'Nunito',sans-serif;font-size:clamp(28px,5vw,48px);font-weight:900;line-height:1.1;letter-spacing:-1.5px;color:var(--text);margin-bottom:16px}
+.h-pill{display:inline-block;background:var(--pink);color:var(--on-pink);border-radius:var(--rpill);padding:1px 18px;margin:0 2px;font-size:.93em;border:2px solid var(--pink-d)}
+.hero-notice{font-size:13px;color:var(--text2);margin-top:20px;line-height:1.6;max-width:540px;margin-left:auto;margin-right:auto}
+/* LANGUAGE GRID */
+.region-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;max-width:920px;margin:32px auto 0;width:100%}
+.region-card{background:var(--surface);border:2px solid var(--border);border-radius:var(--r);padding:28px 24px;cursor:pointer;transition:transform .2s,box-shadow .2s,border-color .2s;box-shadow:var(--shadow);text-decoration:none;display:flex;flex-direction:column;gap:8px;text-align:center;align-items:center;position:relative;overflow:hidden}
+.region-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--lime-d),var(--lime),var(--pink));opacity:0;transition:opacity .2s}
+.region-card:hover::after{opacity:1}
+.region-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-h);border-color:var(--lime-d)}
+[data-theme="dark"] .region-card:hover{border-color:var(--lime)}
+.region-card:focus-visible{outline:3px solid var(--lime);outline-offset:2px}
+.region-flag{line-height:1;filter:drop-shadow(0 1px 3px rgba(0,0,0,.15))}
+.region-flag svg{box-shadow:0 0 0 1px rgba(120,135,160,.4)}
+[data-theme="dark"] .region-flag{filter:none}
+.region-name{font-family:'Nunito',sans-serif;font-size:18px;font-weight:900;color:var(--text)}
+.region-desc{font-size:13px;color:var(--text2);line-height:1.5}
+.region-cta{font-family:'Nunito',sans-serif;font-size:13px;font-weight:900;color:var(--lime-d);display:flex;align-items:center;gap:4px;margin-top:4px}
+[data-theme="dark"] .region-cta{color:var(--lime)}
+/* SOON */
+.soon-note{margin-top:22px;font-size:12.5px;color:var(--text-muted);font-weight:600;letter-spacing:.2px}
+/* FOOTER */
+footer{text-align:center;padding:20px 24px;font-size:11px;color:var(--text2);border-top:1px solid var(--border);margin-top:auto;line-height:1.7;opacity:.7}
+@media(max-width:640px){.hero{padding-left:18px;padding-right:18px}.region-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a class="logo" href="#">
+    <span class="logo-mark">kodland</span>
+    <div class="logo-div"></div>
+    <span class="logo-sub">Python Pro Tutor Training</span>
+  </a>
+  <button class="tbtn" id="theme-btn" title="Toggle dark mode" onclick="toggleTheme()">🌙</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-icon">🐍</span>
+    <div class="eyebrow">🎓 Tutor Training Program</div>
+    <h1>Choose your<br><span class="h-pill">language</span><br>to get started</h1>
+    <p class="hero-notice">Select your training language. Your progress is saved separately per language, in this browser.</p>
+
+    <!-- LANGUAGE CARDS — add one per translation as content-XX.js files are added -->
+    <div class="region-grid">
+
+      <a class="region-card" href="en.html">
+        <div class="region-flag">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 40" width="46" height="31" style="border-radius:4px"><rect width="60" height="40" fill="#012169"/><path d="M0,0 L60,40 M60,0 L0,40" stroke="#fff" stroke-width="8"/><path d="M0,0 L60,40 M60,0 L0,40" stroke="#C8102E" stroke-width="5"/><path d="M30,0 V40 M0,20 H60" stroke="#fff" stroke-width="13"/><path d="M30,0 V40 M0,20 H60" stroke="#C8102E" stroke-width="8"/></svg>
+        </div>
+        <div class="region-name">English</div>
+        <div class="region-desc">The Python Pro tutor-training track in <strong>English</strong>.</div>
+        <div class="region-cta">Open English training →</div>
+      </a>
+
+    </div><!-- /region-grid -->
+    <p class="soon-note">🌐 More languages coming soon.</p>
+  </div><!-- /hero-inner -->
+</section>
+
+<footer>
+  © 2026 Kodland. Designed and developed by Ayberk Temizci for internal tutor training purposes.<br>
+  This material is the exclusive property of Kodland. Unauthorized duplication, distribution, or use outside of Kodland's internal training program is strictly prohibited.
+</footer>
+
+<script>
+// Theme — shares the 'kl-theme' key with the training pages so the choice carries over.
+const saved = localStorage.getItem('kl-theme');
+if(saved) document.documentElement.setAttribute('data-theme', saved);
+if(saved === 'dark') document.getElementById('theme-btn').textContent = '☀️';
+function toggleTheme(){
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  const next = isDark ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  localStorage.setItem('kl-theme', next);
+  document.getElementById('theme-btn').textContent = next === 'dark' ? '☀️' : '🌙';
+}
+</script>
+</body>
+</html>
