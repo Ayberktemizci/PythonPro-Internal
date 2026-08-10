@@ -115,32 +115,116 @@ dst: {
   html: `<div class="dst-body">
     <div class="dst-intro">
       <div class="dst-badge">🎯 Final Stage</div>
-      <h1 class="dst-h1">Python Pro: the Digital Skill Test</h1>
-      <p class="dst-sub">The final practical assessment for Python Pro tutor candidates.</p>
-    </div>
-    <div class="dst-ph">
-      <div class="dst-ph-em">🚧</div>
-      <h3>Not published yet</h3>
-      <p>The Digital Skill Test hasn’t been finalised. Your training team will add the task, any files to download and the submission form here — check back before you attempt it.</p>
+      <h1 class="dst-h1">Test for Python Pro Tutor Candidates</h1>
+      <p class="dst-sub">The main goal of this course is for students to build great projects across several fields — chatbot automation, web development and artificial intelligence — using Python’s various libraries. This task is where you show that you have advanced Python knowledge and can help students while they write those projects.</p>
     </div>
 
     <div class="dst-block">
-      <div class="sch">🧭 What to expect in the meantime</div>
+      <div class="sch">🧩 The practical task</div>
       <div class="card">
-        <p>The exact task isn’t set, so nothing below is a promise. But the DST assesses <strong>whether you can do what you will be asking students to do</strong> — so the honest guidance is that nothing in it should be a surprise if you completed the <strong>✋ Before you teach this</strong> checklists in every module.</p>
-        <p>Expect it to draw on the practical core of the course rather than on recall:</p>
+        <p>Using <a href="https://flask.palletsprojects.com/en/stable/" target="_blank" rel="noopener noreferrer">Flask</a> and database skills, build an engaging, dynamic <strong>quiz website aimed at teenagers</strong>.</p>
       </div>
+    </div>
+
+    <div class="dst-block">
+      <div class="sch">✅ Project criteria</div>
       <div class="card"><ul class="dst-check">
-        <li>Building or repairing a small working program — most likely a <strong>Discord bot</strong> or a <strong>Flask app</strong>, since those are the two spines of the course</li>
-        <li>Finding and fixing <strong>deliberate errors</strong> in code you did not write, and listing what was wrong</li>
-        <li>Handling <strong>secrets correctly</strong> — no token, key or password anywhere in what you submit</li>
-        <li>Explaining a piece of code in plain language, the way you would to a 14-year-old</li>
-        <li>Possibly a <strong>teaching</strong> element: how you would introduce a topic, or what you would say to a stuck student</li>
+        <li>The website must have a quiz covering <strong>all</strong> of the suggested topics.</li>
+        <li>The quiz must consist of <strong>at least 5</strong> questions.</li>
+        <li>A <strong>relational database</strong> must be used. (You can make use of <a href="https://flask-sqlalchemy.readthedocs.io/en/stable/" target="_blank" rel="noopener noreferrer">Flask-SQLAlchemy</a>.)</li>
+        <li>The website must be published on <a href="https://www.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">PythonAnywhere</a>.</li>
+        <li>The website must have a separate page where it can <strong>detect or classify an image the user uploads</strong>.</li>
       </ul></div>
-      <div class="card hi">
-        <h4>How to prepare, starting now</h4>
-        <p>Re-run the practical checklists you rushed. If you ticked “built the diary app” without really building it, that is the gap to close first — the database and Flask modules are where a practical assessment bites hardest, and they are the two modules candidates most often read rather than do.</p>
+    </div>
+
+    <div class="dst-block">
+      <div class="sch">📚 Quiz topics</div>
+      <div class="card"><ul class="dst-check">
+        <li>Chatbot automation with Python (<a href="https://discordpy.readthedocs.io/en/stable/" target="_blank" rel="noopener noreferrer">Discord.py</a>)</li>
+        <li>Web development with Python (<a href="https://flask.palletsprojects.com/en/stable/" target="_blank" rel="noopener noreferrer">Flask</a>)</li>
+        <li>Artificial intelligence development with Python</li>
+        <li>Computer Vision (<a href="https://www.tensorflow.org/api_docs/python/tf" target="_blank" rel="noopener noreferrer">TensorFlow</a>, <a href="https://imageai.readthedocs.io/en/latest/detection/index.html" target="_blank" rel="noopener noreferrer">ImageAI</a>)</li>
+        <li>Natural Language Processing (<a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank" rel="noopener noreferrer">BeautifulSoup</a>, <a href="https://www.nltk.org/" target="_blank" rel="noopener noreferrer">NLTK</a>)</li>
+      </ul></div>
+    </div>
+
+    <div class="dst-block">
+      <div class="sch">⚠️ Things to pay attention to</div>
+      <div class="card"><ul class="dst-check">
+        <li>When the user submits the quiz, <strong>the score they achieved must be shown</strong>. The user can retake the quiz, and both their <strong>most recent result</strong> and their <strong>highest score</strong> must be displayed.</li>
+        <li>In the <strong>top right corner of the screen</strong>, the highest score achieved across all users so far and the current user’s own highest score must be shown.</li>
+        <li>The <strong>footer of every page</strong> of the website must contain information about the author.</li>
+        <li>Image detection results must be <strong>shown on screen</strong> (for example: class name + confidence score) and <strong>saved to the database</strong>. For the model you can use one you trained in Teachable Machine, or ImageAI’s Tiny YOLO model.</li>
+      </ul></div>
+    </div>
+
+    <div class="dst-block">
+      <div class="sch">🖼️ An example site</div>
+      <p class="dst-note">The reference implementation shows a quiz page with <em>Your name</em>, numbered questions and multiple-choice answers, with <strong>Personal High Score</strong> and <strong>Overall High Score</strong> in the top right — and a results page showing <em>Your score</em>, <em>Personal high score</em>, <em>Overall high score</em>, a <strong>Try Again</strong> button, and the author credit in the footer.</p>
+      <div class="dl-row">
+        <a class="dl-btn" href="https://github.com/GitKodland/HardSkillsTest" target="_blank" rel="noopener noreferrer">
+          <span class="dl-ico">📦</span><span class="dl-tx"><b>The template</b><small>github.com/GitKodland/HardSkillsTest</small></span>
+        </a>
       </div>
+      <p class="dst-note" style="margin-top:12px">You can use this template, or create a new one entirely yourself.</p>
+    </div>
+
+    <div class="dst-block">
+      <div class="sch">📝 Note</div>
+      <div class="card hi">
+        <h4>This task measures your back-end skills</h4>
+        <p>For that reason you do not need to take extra care over the design.</p>
+      </div>
+    </div>
+
+    <div class="dst-block">
+      <div class="sch">‼️ Important</div>
+      <div class="card">
+        <p><strong>Make sure you have fully tested the project before submitting it.</strong> All the criteria must be met, every required element must be present on the pages, and the project must run without errors.</p>
+      </div>
+    </div>
+
+    <div class="dst-block">
+      <div class="sch">🚀 How to submit</div>
+      <div class="card"><ol class="dst-steps">
+        <li>Upload the completed project to <strong>GitHub</strong> and set access to <strong>public</strong>.</li>
+        <li>Publish it on <strong>PythonAnywhere</strong>.</li>
+        <li>Take the skill test, and add the link to your project as the answer to the <strong>final question</strong> of the test.</li>
+      </ol></div>
+    </div>
+
+    <div class="dst-block">
+      <div class="sch">🔗 Skill test</div>
+      <div class="form-ph">
+        <div class="form-ph-ico">📝</div>
+        <strong>Submission form link coming</strong>
+        <p>The English submission form isn’t linked here yet. Your training team will add it — check back before you submit.</p>
+      </div>
+    </div>
+
+    <div class="dst-block">
+      <div class="card">
+        <p style="text-align:center;font-family:'Nunito',sans-serif;font-weight:900;font-size:18px;color:var(--text);margin:0">Good luck! 🍀</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="dst-block">
+      <div class="sch">📎 From your training — not part of the brief above</div>
+      <div class="card hi">
+        <h4>Where each requirement was taught</h4>
+        <p>Every skill this task asks for is covered in a module you have already completed. If something feels shaky, go back to it rather than starting from scratch:</p>
+        <ul>
+          <li><strong>Flask, routes, templates and forms</strong> → Module 7 (course M3)</li>
+          <li><strong>Relational database with Flask-SQLAlchemy, and scores per user</strong> → Module 8 (course M4)</li>
+          <li><strong>Publishing on PythonAnywhere, including the WSGI step</strong> → Module 8 (course M4L3)</li>
+          <li><strong>Training a model in Teachable Machine</strong> → Module 9 (course M5L4)</li>
+          <li><strong>Running that model from code, and ImageAI / Tiny YOLO detection</strong> → Module 10 (course M6)</li>
+          <li><strong>Discord.py, BeautifulSoup and NLTK</strong> — quiz subject matter → Modules 5 and 9</li>
+        </ul>
+      </div>
+      <div class="callout cw"><span class="ci">⚠️</span><span>Before you make the repository public: your project may contain a bot token, an API key or a Flask <code>secret_key</code>. None of them belong in a public repository, and deleting them later does not help because Git keeps history. Check before you push — this is the same rule you will be enforcing with your own students.</span></div>
     </div>
   </div>`
 },
