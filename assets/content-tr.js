@@ -178,12 +178,9 @@ dst: {
 
     <div class="dst-block">
       <div class="sch">🔗 Yetenek Testi</div>
-      <div class="form-ph">
-        <div class="form-ph-ico">📝</div>
-        <strong>Gönderim formu bağlantısı eklenecek</strong>
-        <p>Form bağlantısı buraya henüz eklenmedi. Eğitim ekibiniz ekleyecek — göndermeden önce tekrar kontrol edin.</p>
+      <a class="dst-form-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeEn2HRPJMx52tpYvzTJp6Eno0SsI30DHNlUPrtFE4T6XLexg/viewform" target="_blank" rel="noopener noreferrer">📝 Yetenek testini aç →</a>
+        <p class="dst-note" style="margin-top:12px">Formu yeni sekmede açar. Göndermeden önce depounuzun herkese açık olduğundan ve kodda token kalmadığından emin olun.</p>
       </div>
-    </div>
 
     <div class="dst-block">
       <div class="card">

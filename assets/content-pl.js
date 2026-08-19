@@ -175,12 +175,9 @@ dst: {
 
     <div class="dst-block">
       <div class="sch">🔗 Test umiejętności</div>
-      <div class="form-ph">
-        <div class="form-ph-ico">📝</div>
-        <strong>Link do formularza zgłoszeniowego wkrótce</strong>
-        <p>Polski formularz zgłoszeniowy nie jest tu jeszcze podlinkowany. Zespół szkoleniowy go doda — sprawdź ponownie przed wysłaniem.</p>
+      <a class="dst-form-btn" href="https://docs.google.com/forms/d/1cxtge_qjK-PPkDpqZwD4-6zY155vhVt1Vu9aI1aIIAA/viewform" target="_blank" rel="noopener noreferrer">📝 Otwórz test umiejętności →</a>
+        <p class="dst-note" style="margin-top:12px">Otwiera formularz w nowej karcie. Przed wysłaniem upewnij się, że repozytorium jest publiczne i że w kodzie nie został żaden token.</p>
       </div>
-    </div>
 
     <div class="dst-block">
       <div class="card">

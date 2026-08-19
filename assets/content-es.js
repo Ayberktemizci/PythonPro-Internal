@@ -176,12 +176,9 @@ dst: {
 
     <div class="dst-block">
       <div class="sch">🔗 Prueba de habilidades</div>
-      <div class="form-ph">
-        <div class="form-ph-ico">📝</div>
-        <strong>Enlace al formulario de entrega pendiente</strong>
-        <p>Todavía no está enlazado aquí el formulario de entrega en español. Tu equipo de formación lo añadirá: vuelve a mirar antes de entregar.</p>
+      <a class="dst-form-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeXPWTWL4ikHzZXX65LLMpQJF2sfPV7nr3yPOEdK0hCB_A65A/viewform" target="_blank" rel="noopener noreferrer">📝 Abrir la prueba de habilidades →</a>
+        <p class="dst-note" style="margin-top:12px">Abre el formulario en una pestaña nueva. Antes de entregar, confirma que el repositorio es público y que no ha quedado ningún token en el código.</p>
       </div>
-    </div>
 
     <div class="dst-block">
       <div class="card">
@@ -345,13 +342,13 @@ modules: [
     practical:{
       intro:'Este módulo es el único sitio donde leer de verdad no basta: estas construcciones solo encajan cuando las has ejecutado. Antes del test, trabaja todo esto en un archivo de pruebas:',
       items:[
-        'Escribió un decorador propio, desde cero, y vio cómo envuelve una función',
-        'Escribió y ejecutó una función <code>async def</code> con <code>await asyncio.sleep(1)</code> y vio por qué importa el bucle',
-        'Definió una clase con <code>__init__</code> y <code>self</code>, creó dos objetos a partir de ella y les dio valores distintos',
-        'Hizo que una clase heredara de otra y llamó al método de la clase madre',
-        'Añadió un <code>__repr__</code> y vio qué cambia al imprimir el objeto',
-        'Reescribió un pequeño bucle <code>for</code> como comprensión de lista, y una función de dos líneas como <code>lambda</code>',
-        'Ejecutó una función que recibe <code>*args</code> e imprimió qué es <code>args</code> en realidad'
+        'Escribir un decorador propio, desde cero, y ver cómo envuelve una función',
+        'Escribir y ejecutar una función <code>async def</code> con <code>await asyncio.sleep(1)</code> y ver por qué importa el bucle',
+        'Definir una clase con <code>__init__</code> y <code>self</code>, crear dos objetos a partir de ella y darles valores distintos',
+        'Hacer que una clase herede de otra y llamar al método de la clase madre',
+        'Añadir un <code>__repr__</code> y ver qué cambia al imprimir el objeto',
+        'Reescribir un pequeño bucle <code>for</code> como comprensión de lista, y una función de dos líneas como <code>lambda</code>',
+        'Ejecutar una función que recibe <code>*args</code> e imprimir qué es <code>args</code> en realidad'
       ]
     },
     sections:[
@@ -471,10 +468,10 @@ bella = <span class="ct2">Dog</span>(<span class="cs">"Bella"</span>)           
     practical:{
       intro:'Antes del test, oriéntate en los materiales reales:',
       items:[
-        'Leyó un plan de clase completo del PDF del temario de principio a fin, incluida su tabla de etapas',
-        'Identificó en ese plan: el briefing, el problema, los objetivos, la teoría, la práctica y la reflexión',
-        'Encontró la nota del principio del plan que nombra el método de enseñanza que usa',
-        'Averiguó qué tendría que dejar fuera la versión individual de 50 minutos de esa clase'
+        'Leer un plan de clase completo del PDF del temario de principio a fin, incluida su tabla de etapas',
+        'Identificar en ese plan: el briefing, el problema, los objetivos, la teoría, la práctica y la reflexión',
+        'Encontrar la nota del principio del plan que nombra el método de enseñanza que usa',
+        'Averiguar qué tendría que dejar fuera la versión individual de 50 minutos de esa clase'
       ]
     },
     sections:[
@@ -536,18 +533,18 @@ bella = <span class="ct2">Dog</span>(<span class="cs">"Bella"</span>)           
     practical:{
       intro:'Este módulo ES la lista de comprobación. No lo marques como completado hasta que cada punto sea cierto de verdad: todo lo que viene después lo da por hecho:',
       items:[
-        'Instaló el intérprete de Python y confirmó que <code>python --version</code> funciona en una terminal nueva',
-        'Instaló VS Code, la extensión de Python y usó <em>Python: Select Interpreter</em> al menos una vez',
-        'Creó una carpeta de proyecto y un archivo <code>.py</code>, y lo ejecutó desde la terminal de VS Code',
-        'Instaló una librería con <code>pip install</code> y después creó un entorno <strong>pipenv</strong> e instaló una dentro de él',
-        'Provocó a propósito un <code>ModuleNotFoundError</code> instalando fuera del entorno — y lo arregló',
-        'Instaló Git, ejecutó <code>git config --global user.name</code> y <code>user.email</code>, y publicó un repositorio <strong>desde dentro de VS Code</strong>',
-        'Creó y fusionó una rama, y vio la salida del merge fast-forward',
-        'Registró una aplicación y un bot de Discord, activó el <strong>Message Content Intent</strong>, lo invitó a su propio servidor y consiguió que respondiera',
-        'Creó un cuaderno de Colab, ejecutó una celda de código y una de markdown, subió un archivo y vio cómo el reinicio de sesión lo borraba',
-        'Entrenó un clasificador en Teachable Machine, exportó el modelo y lo descomprimió en Colab',
-        'Abrió la plataforma como tutor Y vio una clase tal como la ve un alumno',
-        'Abrió al menos tres presentaciones de clase en modo presentación'
+        'Instalar el intérprete de Python y confirmar que <code>python --version</code> funciona en una terminal nueva',
+        'Instalar VS Code y la extensión de Python, y usar <em>Python: Select Interpreter</em> al menos una vez',
+        'Crear una carpeta de proyecto y un archivo <code>.py</code>, y ejecutarlo desde la terminal de VS Code',
+        'Instalar una librería con <code>pip install</code> y después crear un entorno <strong>pipenv</strong> e instalar una dentro de él',
+        'Provocar a propósito un <code>ModuleNotFoundError</code> instalando fuera del entorno — y arreglarlo',
+        'Instalar Git, ejecutar <code>git config --global user.name</code> y <code>git config --global user.email</code>, y publicar un repositorio <strong>desde dentro de VS Code</strong>',
+        'Crear y fusionar una rama, y ver la salida del merge fast-forward',
+        'Registrar una aplicación y un bot de Discord, activar el <strong>Message Content Intent</strong>, invitarlo a su propio servidor y conseguir que responda',
+        'Crear un cuaderno de Colab, ejecutar una celda de código y una de markdown, subir un archivo y ver cómo el reinicio de sesión lo borra',
+        'Entrenar un clasificador en Teachable Machine, exportar el modelo y descomprimirlo en Colab',
+        'Abrir la plataforma como tutor Y ver una clase tal como la ve un alumno',
+        'Abrir al menos tres presentaciones de clase en modo presentación'
       ]
     },
     sections:[
@@ -595,8 +592,8 @@ bella = <span class="ct2">Dog</span>(<span class="cs">"Bella"</span>)           
       {t:'🖥️ La plataforma y las presentaciones', cards:[
         {type:'text', h:'Míralo desde los dos lados', b:'Casi todas las etapas de todas las clases dicen “ve a la tarea llamada…”, así que la plataforma es donde vive realmente el curso. Consigue acceso y mira: cómo se ve una <strong>página de tarea</strong> para un alumno, dónde se muestran la <strong>teoría y los ejemplos de código</strong> a los que se refieren los planes, el <strong>chat</strong> asociado a cada tarea, qué hace el botón <strong>Enviar</strong> y cómo se <strong>ponen las notas</strong>. Después abre el <strong>Backoffice</strong> y localiza dónde se verifican las entregas y dónde está el enlace del chat del grupo.'},
         {type:'warn', txt:'Los planes citan constantemente “Diapositiva 4”, “Diapositiva 6 (esta diapositiva está animada)”. Si no has abierto las presentaciones no sabrás si una diapositiva ya cubre un concepto o si se espera que lo expliques tú, y acabarás duplicando o saltándotelo. Abre las presentaciones de la clase siguiente cada vez que prepares, y recuerda presentar en <strong>modo presentación</strong>, como especifican los planes.'},
-        {type:'image', src:'assets/media/images/setup-platform.jpg', alt:'La página del curso Python Pro en la plataforma de Kodland, con la barra de título del curso, las pestañas de tareas de clase y deberes, y las tarjetas de módulo.', cap:'La página del curso en la plataforma. Menú izquierdo: <em>Kurslarım</em> = Mis cursos. Las pestañas son <em>Ders İçi Görevler</em> = tareas de clase, <em>Ödevler</em> = deberes (con el número de elementos pendientes), <em>Lider Tablosu</em> = tabla de clasificación. Debajo están las tarjetas de módulo —<em>Modül 1, 2, 3…</em>— y cada una abre la lista de clases a la que apuntan todas las instrucciones de “ve a la tarea llamada…”.'},
-        {type:'good', txt:'Lee la barra de título del curso en esa captura, porque es el resumen más claro de lo que vas a enseñar: <strong>[1619] Python Pro [13-17] [90 min] [40 L] [Turkey]</strong>: código de curso 1619, edades <strong>13 a 17</strong>, clases de noventa minutos, cuarenta en total. La insignia sobre <em>Ödevler</em> son los deberes pendientes de corregir; ese número es el que crece en silencio si dejas la corrección para luego.'},
+        {type:'image', src:'assets/media/images/setup-platform.jpg', alt:'La página del curso Python Pro en la plataforma de Kodland, con la barra de título del curso, las pestañas de tareas de clase y deberes, y las tarjetas de módulo.', cap:'La página del curso en la plataforma. Menú izquierdo: <em>Kurslarım</em> = Mis cursos. Las pestañas son <em>Ders İçi Görevler</em> = tareas de clase, <em>Ödevler</em> = tareas (con el número de elementos pendientes), <em>Lider Tablosu</em> = tabla de clasificación. Debajo están las tarjetas de módulo —<em>Modül 1, 2, 3…</em>— y cada una abre la lista de clases a la que apuntan todas las instrucciones de “ve a la tarea llamada…”.'},
+        {type:'good', txt:'Lee la barra de título del curso en esa captura, porque es el resumen más claro de lo que vas a enseñar: <strong>[1619] Python Pro [13-17] [90 min] [40 L] [Turkey]</strong>: código de curso 1619, edades <strong>13 a 17</strong>, clases de noventa minutos, cuarenta en total. La insignia sobre <em>Ödevler</em> son las tareas pendientes de corregir; ese número es el que crece en silencio si dejas la corrección para luego.'},
         {type:'text', h:'Los materiales que te da cada clase', b:'Todos los planes tienen una sección de <strong>Materiales</strong> que lista lo que existe para esa clase: la presentación, los cuestionarios, los vídeos, los enlaces a documentación, los repositorios de partida, los ZIP y las herramientas de evaluación. Léela antes de preparar nada desde cero. Varias cosas que podrías dar por hecho que tienes que construir ya están dadas, incluido el <code>diary(complete).zip</code> del módulo de bases de datos y el repositorio de solución de las clases del bot con IA.'},
         {type:'good', txt:'Cuando tengas acceso, haz un ensayo: elige una clase, abre su plan, su presentación y sus tareas de la plataforma en paralelo y recórrela como si la estuvieras dando. Ese único ensayo te dirá más sobre tu preparación que cualquier test de esta formación.'}
       ]}
@@ -621,13 +618,13 @@ bella = <span class="ct2">Dog</span>(<span class="cs">"Bella"</span>)           
     practical:{
       intro:'Antes de dar cualquier clase del Módulo 1 del curso, debes haber hecho personalmente:',
       items:[
-        'Escribió la aplicación de diccionario de jerga con un diccionario real y búsqueda con <code>.keys()</code>',
-        'Escribió el generador de contraseñas con <code>random.choice</code> dentro de un bucle',
-        'Extrajo ese generador a <code>bot_logic.py</code> como función y lo importó en <code>main.py</code>',
-        'Registró un bot, activó el Message Content Intent y consiguió que un bot de la clase <strong>Client</strong> respondiera en su propio servidor',
-        'Reescribió ese mismo bot usando la clase <strong>Bot</strong>, con <code>@bot.command()</code> y un prefijo',
-        'Subió un proyecto a GitHub, lo modificó, lo volvió a subir y vio el historial del archivo',
-        'Ejecutó a propósito un bot con el token quitado, para saber cómo se manifiesta ese fallo'
+        'Escribir la aplicación de diccionario de jerga con un diccionario real y búsqueda con <code>.keys()</code>',
+        'Escribir el generador de contraseñas con <code>random.choice</code> dentro de un bucle',
+        'Extraer ese generador a <code>bot_logic.py</code> como función e importarlo en <code>main.py</code>',
+        'Registrar un bot, activar el Message Content Intent y conseguir que un bot de la clase <strong>Client</strong> responda en su propio servidor',
+        'Reescribir ese mismo bot usando la clase <strong>Bot</strong>, con <code>@bot.command()</code> y un prefijo',
+        'Subir un proyecto a GitHub, modificarlo, volver a subirlo y ver el historial del archivo',
+        'Ejecutar a propósito un bot con el token quitado, para saber cómo se manifiesta ese fallo'
       ]
     },
     sections:[
@@ -772,14 +769,14 @@ bot.<span class="cf">run</span>(<span class="cs">"YOUR_BOT_TOKEN"</span>)`},
     practical:{
       intro:'Antes de dar cualquier clase del Módulo 2 del curso, debes haber hecho personalmente:',
       items:[
-        'Escribió un bot que envía una imagen concreta con <code>discord.File</code> y el modo <code>\'rb\'</code>',
-        'Lo refinó para elegir un archivo al azar con <code>os.listdir</code> — y falló al menos una vez con la ruta',
-        'Llamó a una API pública con <code>requests</code> y extrajo un campo de la respuesta <code>.json()</code>',
-        'Construyó una pequeña página HTML con las etiquetas del curso y le enlazó un <code>style.css</code>',
-        'Añadió una animación con <code>@keyframes</code> y una variante <code>:hover</code>',
-        'Incrustó un widget de terceros con <code>&lt;iframe&gt;</code>',
-        'Publicó la página en GitHub desde dentro de VS Code',
-        'Miró una web deliberadamente mala y anotó él mismo sus problemas de UX y de UI'
+        'Escribir un bot que envía una imagen concreta con <code>discord.File</code> y el modo <code>\'rb\'</code>',
+        'Refinarlo para elegir un archivo al azar con <code>os.listdir</code> — y fallar al menos una vez con la ruta',
+        'Llamar a una API pública con <code>requests</code> y extraer un campo de la respuesta <code>.json()</code>',
+        'Construir una pequeña página HTML con las etiquetas del curso y enlazarle un <code>style.css</code>',
+        'Añadir una animación con <code>@keyframes</code> y una variante <code>:hover</code>',
+        'Incrustar un widget de terceros con <code>&lt;iframe&gt;</code>',
+        'Publicar la página en GitHub desde dentro de VS Code',
+        'Mirar una web deliberadamente mala y anotar uno mismo sus problemas de UX y de UI'
       ]
     },
     sections:[
@@ -921,15 +918,15 @@ h1:hover {
     practical:{
       intro:'Antes de dar cualquier clase del Módulo 3 del curso, debes haber CONSTRUIDO PERSONALMENTE UNA APLICACIÓN FLASK QUE FUNCIONE. En concreto:',
       items:[
-        'Creó un entorno con pipenv e instaló Flask dentro de él',
-        'Escribió una app de una sola ruta que devuelve HTML, con <code>app.run(debug=True)</code>, y la abrió en un navegador',
-        'Añadió una segunda ruta con su propia URL y enlazó las dos páginas entre sí',
-        'Pasó de devolver cadenas a <code>render_template</code> con una carpeta <code>templates/</code> de verdad',
-        'Pasó una variable a una plantilla y la mostró con <code>{{ }}</code> de Jinja',
-        'Construyó un <code>&lt;form&gt;</code> HTML, lo leyó con <code>request.form</code> y mostró el resultado en otra página',
-        'Lo rompió a propósito poniendo <code>id</code> sin <code>name</code>, y vio el KeyError',
-        'Usó <code>url_for()</code> en un enlace, y un <code>&lt;select&gt;</code> cuyo valor llega a Python',
-        'Descargó un proyecto desde una rama del repositorio'
+        'Crear un entorno con pipenv e instalar Flask dentro de él',
+        'Escribir una app de una sola ruta que devuelve HTML, con <code>app.run(debug=True)</code>, y abrirla en un navegador',
+        'Añadir una segunda ruta con su propia URL y enlazar las dos páginas entre sí',
+        'Pasar de devolver cadenas a <code>render_template</code> con una carpeta <code>templates/</code> de verdad',
+        'Pasar una variable a una plantilla y mostrarla con <code>{{ }}</code> de Jinja',
+        'Construir un <code>&lt;form&gt;</code> HTML, leerlo con <code>request.form</code> y mostrar el resultado en otra página',
+        'Romperlo a propósito poniendo <code>id</code> sin <code>name</code>, y ver el KeyError',
+        'Usar <code>url_for()</code> en un enlace, y un <code>&lt;select&gt;</code> cuyo valor llega a Python',
+        'Descargar un proyecto desde una rama del repositorio'
       ]
     },
     sections:[
@@ -989,9 +986,9 @@ app.<span class="cf">run</span>(debug=<span class="ck">True</span>)`},
       {t:'🌿 L3 — Ramas, url_for y formularios (EduScrum)', cards:[
         {type:'hi', h:'Esta es una clase de EduScrum — la habilidad es el tiempo', b:'La clase está montada como <strong>dos sprints con retrospectivas</strong>. Di en voz alta el límite de tiempo de cada sprint. La nota de la clase es tajante sobre el modo de fallo: si vas retrasado, <strong>pasa igualmente a la retrospectiva</strong> y comentad qué salió mal. Terminar todas las tareas importa menos que el grupo viva un ciclo de sprint completo.'},
         {type:'qa', h:'Las preguntas de la retrospectiva', items:[
-          {k:'1', v:'¿Qué habéis conseguido? ¿Os dio tiempo a todo?'},
+          {k:'1', v:'¿Qué consiguieron? ¿Les dio tiempo para todo?'},
           {k:'2', v:'¿Qué etapa fue la más difícil?'},
-          {k:'3', v:'¿Cómo mejoraríais este sprint?'}
+          {k:'3', v:'¿Cómo mejorarían este sprint?'}
         ]},
         {type:'text', h:'Ramas de repositorio — la metáfora que funciona', b:'Una <strong>rama</strong> es como una copia del repositorio hecha para una tarea concreta. Pregúntales: tu proyecto lo usa gente todos los días y necesitas cambiar algo, ¿paras el proyecto entero mientras desarrollas? Evidentemente no. Creas una rama, desarrollas y pruebas ahí, y la fusionas con el proyecto principal cuando estás seguro de que funciona. En esta clase el objetivo práctico es simplemente encontrar la rama correcta y descargar de ella los archivos del proyecto.'},
         {type:'text', h:'url_for y formularios', b:'Explica <code>url_for()</code>: construye una URL a partir del <em>nombre de la función de vista</em> en lugar de una ruta fija, así que los enlaces no se rompen cuando cambian las rutas. Después los formularios: enséñales el formulario que ellos mismos rellenaron al apuntarse a Kodland, para que <code>&lt;form&gt;</code> e <code>&lt;input&gt;</code> lleguen como algo familiar y no abstracto.'},
@@ -1047,15 +1044,15 @@ app.<span class="cf">run</span>(debug=<span class="ck">True</span>)`},
     practical:{
       intro:'Antes de dar cualquier clase del Módulo 4 del curso debes haber CONSTRUIDO PERSONALMENTE LA APP DEL DIARIO DE PRINCIPIO A FIN — se espera que hagas LiveCoding de esto delante del alumnado, y eso es imposible solo leyendo. En concreto:',
       items:[
-        'Instaló <code>flask_sqlalchemy</code> y definió una clase de modelo con campos <code>db.Column</code> y una <code>primary_key</code>',
-        'Creó el archivo <code>.db</code> y guardó un registro con <code>db.session.add()</code> y después <code>commit()</code>',
-        'Omitió el <code>commit()</code> a propósito y confirmó que no se guarda nada y no salta ningún error',
-        'Leyó registros con <code>.query.all()</code>, <code>.order_by()</code> y <code>.get(id)</code>, y los mostró en una plantilla',
-        'Añadió una segunda tabla <code>User</code>, se topó con el error “no such table” y lo arregló borrando y recreando el <code>.db</code>',
-        'Construyó registro e inicio de sesión, con <code>session</code> y <code>secret_key</code>, y filtró las entradas con <code>filter_by()</code>',
-        'Desplegó una app que funciona en <strong>PythonAnywhere</strong>, incluida la edición del archivo WSGI, y la abrió en el móvil',
-        'Rompió el despliegue a propósito y encontró la causa en el registro de errores',
-        'Ensayó en voz alta la advertencia de una frase sobre el hash de contraseñas'
+        'Instalar <code>flask_sqlalchemy</code> y definir una clase de modelo con campos <code>db.Column</code> y una <code>primary_key</code>',
+        'Crear el archivo <code>.db</code> y guardar un registro con <code>db.session.add()</code> y después <code>commit()</code>',
+        'Omitir el <code>commit()</code> a propósito y confirmar que no se guarda nada y no salta ningún error',
+        'Leer registros con <code>.query.all()</code>, <code>.order_by()</code> y <code>.get(id)</code>, y mostrarlos en una plantilla',
+        'Añadir una segunda tabla <code>User</code>, toparse con el error “no such table” y arreglarlo borrando y recreando el <code>.db</code>',
+        'Construir registro e inicio de sesión, con <code>session</code> y <code>secret_key</code>, y filtrar las entradas con <code>filter_by()</code>',
+        'Desplegar una app que funciona en <strong>PythonAnywhere</strong>, incluida la edición del archivo WSGI, y abrirla en el móvil',
+        'Romper el despliegue a propósito y encontrar la causa en el registro de errores',
+        'Ensayar en voz alta la advertencia de una frase sobre el hash de contraseñas'
       ]
     },
     sections:[
@@ -1157,15 +1154,15 @@ error = <span class="cs">'Usuario o contraseña incorrectos'</span>
     practical:{
       intro:'Antes de dar cualquier clase del Módulo 5 del curso, debes haber hecho personalmente:',
       items:[
-        'Montó un cuaderno de Colab con celdas de código y de markdown, y subió imágenes a la sesión',
-        'Quitó el fondo de una imagen con <code>rembg</code> y compuso uno nuevo con OpenCV',
-        'Escribió texto sobre una imagen con OpenCV',
-        'Abrió las herramientas de desarrollo del navegador e identificó la etiqueta y la clase que contienen un fragmento de contenido de la página',
-        'Hizo scraping de una página con <code>BeautifulSoup</code> y después lo convirtió en un crawler sobre varias secciones',
-        'Construyó un <code>DataFrame</code> de pandas y lo guardó con <code>to_csv</code> — y conservó el archivo',
-        'Ejecutó el resumidor de NLTK de principio a fin, incluidas <code>stopwords</code> y <code>FreqDist</code>',
-        'Entrenó un clasificador en Teachable Machine y lo probó con una imagen que nunca había visto',
-        'Entrenó a propósito un modelo malo y lo vio fallar con total seguridad'
+        'Montar un cuaderno de Colab con celdas de código y de markdown, y subir imágenes a la sesión',
+        'Quitar el fondo de una imagen con <code>rembg</code> y componer uno nuevo con OpenCV',
+        'Escribir texto sobre una imagen con OpenCV',
+        'Abrir las herramientas de desarrollo del navegador e identificar la etiqueta y la clase que contienen un fragmento de contenido de la página',
+        'Hacer scraping de una página con <code>BeautifulSoup</code> y después convertirlo en un crawler sobre varias secciones',
+        'Construir un <code>DataFrame</code> de pandas y guardarlo con <code>to_csv</code> — y conservar el archivo',
+        'Ejecutar el resumidor de NLTK de principio a fin, incluidas <code>stopwords</code> y <code>FreqDist</code>',
+        'Entrenar un clasificador en Teachable Machine y probarlo con una imagen que nunca haya visto',
+        'Entrenar a propósito un modelo malo y verlo fallar con total seguridad'
       ]
     },
     sections:[
@@ -1216,7 +1213,7 @@ cv2.<span class="cf">imwrite</span>(<span class="cs">"result.png"</span>, result
           {k:'Scraping', v:'Extraer automáticamente información de una página web —texto, imágenes, precios— leyendo su HTML.'},
           {k:'Parsing', v:'Analizar la estructura de los datos para sacar información concreta: examinar elementos HTML, usar selectores CSS o XPath para extraer exactamente lo que quieres.'}
         ]},
-        {type:'warn', txt:'Enseña los límites como parte de la habilidad, no como aviso legal. <strong>Derechos de autor</strong>: no uses ni redistribuyas datos protegidos sin permiso. <strong>Términos de uso y políticas de privacidad</strong>: los sitios especifican cómo se puede acceder a sus datos. <strong>robots.txt</strong>: indica qué partes de un sitio se pueden rastrear; compruébalo y respétalo. <strong>Leyes de competencia desleal</strong> en algunas jurisdicciones. <strong>Legislación de datos personales</strong>: nombres, correos y teléfonos están bajo normas como el <strong>RGPD</strong>. Abre el robots.txt del sitio de prácticas con la clase y leed qué secciones están fuera de alcance.'},
+        {type:'warn', txt:'Enseña los límites como parte de la habilidad, no como aviso legal. <strong>Derechos de autor</strong>: no uses ni redistribuyas datos protegidos sin permiso. <strong>Términos de uso y políticas de privacidad</strong>: los sitios especifican cómo se puede acceder a sus datos. <strong>robots.txt</strong>: indica qué partes de un sitio se pueden rastrear; compruébalo y respétalo. <strong>Leyes de competencia desleal</strong> en algunas jurisdicciones. <strong>Legislación de datos personales</strong>: nombres, correos y teléfonos están bajo normas como el <strong>RGPD</strong>. Abre el robots.txt del sitio de prácticas con la clase y lean juntos qué secciones están fuera de alcance.'},
         {type:'text', h:'Cómo funciona la práctica', b:'Enséñales las herramientas de desarrollo del navegador —<code>Shift+Ctrl+I</code> en Windows, <code>Option+Cmd+I</code> en Mac— y plantea el acertijo: ¿qué etiqueta contiene el titular de la noticia y a qué clase pertenece? Esa es la habilidad de verdad. Después amplían el cuaderno de demostración para recoger no solo títulos y enlaces, sino también fechas de publicación y número de visitas, encontrando esas etiquetas por su cuenta.'},
         {type:'code', lbl:'de una página a un crawler sobre cinco secciones', code:`dict_news = {<span class="cs">"news"</span>: [], <span class="cs">"links"</span>: [], <span class="cs">"views"</span>: [], <span class="cs">"comments"</span>: []}
 
@@ -1303,14 +1300,14 @@ df_news.<span class="cf">to_csv</span>(<span class="cs">"./saved_data.csv"</span
     practical:{
       intro:'Antes de dar cualquier clase del Módulo 6 del curso, debes haber hecho personalmente:',
       items:[
-        'Exportó un modelo de Teachable Machine, lo descomprimió en Colab y lo cargó con <code>tf_keras</code>',
-        'Se topó con el error de versión de <code>DepthwiseConv2D</code> y lo arregló con las versiones fijadas',
-        'Escribió una función que recibe una imagen y devuelve un nombre de clase y una confianza',
-        'Confirmó que el modelo mete a la fuerza una imagen sin relación en una de sus clases conocidas',
-        'Generó imágenes con prompts y montó un dataset de dos clases con imágenes generadas y reales',
-        'Ejecutó una detección con <code>ImageAI</code>/YOLOv3 y filtró los resultados por nombre de objeto',
-        'Comparó la detección en una foto recargada y en una limpia, para ver por qué importa el fondo',
-        'Construyó un pequeño script propio de principio a fin que usa un modelo para resolver un problema inventado'
+        'Exportar un modelo de Teachable Machine, descomprimirlo en Colab y cargarlo con <code>tf_keras</code>',
+        'Toparse con el error de versión de <code>DepthwiseConv2D</code> y arreglarlo con las versiones fijadas',
+        'Escribir una función que recibe una imagen y devuelve un nombre de clase y una confianza',
+        'Confirmar que el modelo mete a la fuerza una imagen sin relación en una de sus clases conocidas',
+        'Generar imágenes con prompts y montar un dataset de dos clases con imágenes generadas y reales',
+        'Ejecutar una detección con <code>ImageAI</code>/YOLOv3 y filtrar los resultados por nombre de objeto',
+        'Comparar la detección en una foto recargada y en una limpia, para ver por qué importa el fondo',
+        'Construir un pequeño script propio de principio a fin que use un modelo para resolver un problema inventado'
       ]
     },
     sections:[
@@ -1380,15 +1377,15 @@ model = <span class="cf">load_model</span>(<span class="cs">"PATH_TO_MODEL"</spa
             <span class="cs">"bus"</span>, <span class="cs">"train"</span>, <span class="cs">"truck"</span>, <span class="cs">"traffic_light"</span>, <span class="cs">"stop_sign"</span>]
     <span class="ck">return</span> [d <span class="ck">for</span> d <span class="ck">in</span> detections <span class="ck">if</span> d[<span class="cs">"name"</span>] <span class="ck">in</span> road]`},
         {type:'hi', h:'Juzga la herramienta, no solo el resultado', b:'Evalúa con la clase la calidad de la detección y pregunta qué imágenes funcionarían mejor. La conclusión importa: YOLO funciona mejor cuando los objetos <strong>destacan del fondo</strong>. Después generalízalo: cuando aceptas un encargo de detección, tienes que pensar en qué tipo de entrada vas a recibir de verdad. Elegir una herramienta acorde a los datos que tienes es criterio profesional, y aquí es donde el alumnado se lo encuentra por primera vez.'},
-        {type:'text', h:'La lluvia de ideas — y sus reglas', b:'Quienes desarrollan tienen sus propias iniciativas, a menudo llamadas <strong>pet projects</strong>. Dos pautas: construye algo que resuelva un problema <em>tuyo</em> del día a día, para que sea útil aunque nunca se venda; y hazlo útil para un público concreto. Después haced una lluvia de ideas en condiciones en una pizarra compartida: todo el mundo lista problemas cotidianos, una nota por problema, <strong>sin críticas ni valoraciones en esta fase</strong>, cantidad por encima de calidad, cronómetro de cinco minutos. Solo después se agrupan según lo difíciles que serían de construir. Cada persona elige una para construirla la clase siguiente y describe su público objetivo.'},
+        {type:'text', h:'La lluvia de ideas — y sus reglas', b:'Quienes desarrollan tienen sus propias iniciativas, a menudo llamadas <strong>pet projects</strong>. Dos pautas: construye algo que resuelva un problema <em>tuyo</em> del día a día, para que sea útil aunque nunca se venda; y hazlo útil para un público concreto. Después hagan una lluvia de ideas en condiciones en una pizarra compartida: todo el mundo lista problemas cotidianos, una nota por problema, <strong>sin críticas ni valoraciones en esta fase</strong>, cantidad por encima de calidad, cronómetro de cinco minutos. Solo después se agrupan según lo difíciles que serían de construir. Cada persona elige una para construirla la clase siguiente y describe su público objetivo.'},
         {type:'tip', txt:'Haz la parte de código como live coding: una persona escribe y las demás siguen. Si tienes un alumno fuerte, dale el teclado. La tarea adicional amplía el detector recortando con OpenCV cada usuario de la vía detectado.'}
       ]},
       {t:'🛠️ L4 — Construir su propia solución (EduScrum)', cards:[
         {type:'text', h:'Tres sprints, su propia idea', b:'<strong>Sprint 1 — preparación:</strong> montar el cuaderno, preparar los datos, entrenar el modelo o instanciar los objetos de librería que necesiten. <strong>Sprint 2 — desarrollo:</strong> implementar la lógica de inferencia y documentar el cuaderno con comentarios y bloques de texto. <strong>Sprint 3 — pruebas:</strong> probarlo y listar los fallos y las ideas de mejora en el chat de la plataforma. Retrospectiva después de cada sprint.'},
         {type:'qa', h:'Las preguntas de retrospectiva de esta clase', items:[
-          {k:'1', v:'¿Qué hemos conseguido? ¿Os dio tiempo a hacer todo lo que queríais?'},
+          {k:'1', v:'¿Qué hemos conseguido? ¿Les dio tiempo a hacer todo lo que querían?'},
           {k:'2', v:'¿Qué parte del script fue la más difícil?'},
-          {k:'3', v:'¿Qué necesitáis hacer para mejorar aquello en lo que estabais trabajando?'}
+          {k:'3', v:'¿Qué necesitan hacer para mejorar aquello en lo que estaban trabajando?'}
         ]},
         {type:'text', h:'Tu trabajo durante el sprint 1', b:'Asegúrate de que cada persona <strong>entiende qué tecnología necesita y qué tiene que hacer para usarla</strong> antes de que empiece el desarrollo. Es la primera vez que han elegido el problema por su cuenta, así que el riesgo no es la capacidad de programar: es elegir algo sin ninguna vía de entrada. Detéctalo en el sprint 1, no en el 2.'},
         {type:'tip', txt:'Si se atascan durante el desarrollo, júntales en salas de trabajo o acompáñales individualmente. Documentar el cuaderno con comentarios y bloques de texto no es adorno: es el hábito sobre el que se apoyará la clase de código limpio del Módulo 9 del curso.'},
@@ -1403,7 +1400,7 @@ model = <span class="cf">load_model</span>(<span class="cs">"PATH_TO_MODEL"</spa
       {q:'En la competición de IA contra real, ¿quién gana?', opts:['El equipo con la mayor precisión media de sus modelos — no la persona con el mejor modelo suelto','El alumno cuyo modelo sea más preciso','El equipo que termine antes de entrenar','El equipo que genere más imágenes'], c:0, fb:'La regla es deliberada: premiar la media del equipo hace que ayudar a tus compañeros sea racional y no opcional.'},
       {q:'¿Qué deberías decirle al alumnado sobre las imágenes que genera para el dataset?', opts:['Que se limite a animales, objetos y personajes inventados — nunca personas reales e identificables, porque las falsificaciones realistas difunden desinformación','Cualquier tema vale mientras las imágenes se queden en la carpeta del equipo','Que genere solo imágenes de celebridades, ya que hay más referencias','El tema de la generación no afecta al modelo, así que da igual'], c:0, fb:'La clase se construye exactamente sobre ese riesgo: las imágenes generadas que se parecen a las reales llevan a la desinformación y pueden contener contenido discriminatorio.'},
       {q:'¿Cuál es la diferencia entre detección y segmentación?', opts:['La detección encuentra y encuadra la ubicación de los objetos; la segmentación averigua qué píxeles concretos pertenecen a qué objeto o región','La detección es para fotos y la segmentación para vídeo','La segmentación encuentra un objeto y la detección muchos','Son la misma tarea con librerías distintas'], c:0, fb:'La clasificación etiqueta la imagen entera, la detección localiza y encuadra objetos, y la segmentación divide la imagen en regiones de píxeles por objeto.'},
-      {q:'Tras probar YOLO con varias imágenes, ¿a qué conclusión debería llegar el alumnado?', opts:['Funciona mejor cuando los objetos destacan del fondo — así que hay que pensar qué entrada va a recibir realmente tu aplicación','Funciona igual de bien con cualquier imagen','Solo detecta vehículos','La precisión depende únicamente del umbral de confianza'], c:0, fb:'La clase te pide que debatáis qué imágenes funcionan mejor y luego generalicéis: elegir una herramienta acorde a tu entrada real es criterio profesional.'},
+      {q:'Tras probar YOLO con varias imágenes, ¿a qué conclusión debería llegar el alumnado?', opts:['Funciona mejor cuando los objetos destacan del fondo — así que hay que pensar qué entrada va a recibir realmente tu aplicación','Funciona igual de bien con cualquier imagen','Solo detecta vehículos','La precisión depende únicamente del umbral de confianza'], c:0, fb:'La clase te pide que debatan qué imágenes funcionan mejor y luego generalicen: elegir una herramienta acorde a tu entrada real es criterio profesional.'},
       {q:'Durante la etapa de lluvia de ideas, ¿qué regla tienes que hacer cumplir?', opts:['Nada de críticas ni valoraciones de las ideas mientras se generan — primero cantidad, la criba después','Solo se pueden anotar ideas realistas y construibles','Cada persona puede sugerir una sola idea','Las ideas deben ser aprobadas por el tutor antes de añadirse'], c:0, fb:'La nota de puntos importantes dice que no dejes que valoren las ideas durante la generación; hasta las más disparatadas se anotan, y agruparlas por viabilidad viene después.'},
       {q:'¿Qué debes verificar durante el Sprint 1 de M6L4, antes de que empiece el desarrollo?', opts:['Que cada persona entiende qué tecnología necesita y qué tiene que hacer para usarla','Que cada persona ha terminado de entrenar su modelo','Que el cuaderno está completamente comentado','Que todo el mundo ha elegido el mismo problema'], c:0, fb:'Es la primera vez que el alumnado elige el problema por su cuenta, así que el riesgo real es elegir algo sin vía de entrada. La nota del sprint 1 pide exactamente esa comprobación.'}
     ]
@@ -1417,15 +1414,15 @@ model = <span class="cf">load_model</span>(<span class="cs">"PATH_TO_MODEL"</spa
     practical:{
       intro:'Antes de dar cualquier clase del Módulo 7 del curso, debes haber hecho personalmente:',
       items:[
-        'Montó un entorno virtual con las librerías de IA instaladas y el intérprete correcto seleccionado',
-        'Consiguió que un bot aceptara una imagen adjunta y la guardara con <code>attachment.save()</code>',
-        'Conectó su propio modelo exportado a ese bot para que responda con una predicción',
-        'Publicó el proyecto entero desde VS Code — después de quitar el token',
-        'Escribió un README lo bastante bueno como para sacar 30 según los criterios del propio curso',
-        'Grabó y transcribió voz con <code>sounddevice</code> y <code>speech_recognition</code>',
-        'Se topó con el fallo del micrófono ocupado y confirmó que silenciar Zoom lo arregla',
-        'Añadió traducción al script de transcripción',
-        'Añadió una ruta funcional de entrada por voz a su app de Flask, envuelta en <code>try</code>/<code>except</code>'
+        'Montar un entorno virtual con las librerías de IA instaladas y el intérprete correcto seleccionado',
+        'Conseguir que un bot acepte una imagen adjunta y la guarde con <code>attachment.save()</code>',
+        'Conectar su propio modelo exportado a ese bot para que responda con una predicción',
+        'Publicar el proyecto entero desde VS Code — después de quitar el token',
+        'Escribir un README lo bastante bueno como para sacar 30 según los criterios del propio curso',
+        'Grabar y transcribir voz con <code>sounddevice</code> y <code>speech_recognition</code>',
+        'Toparse con el fallo del micrófono ocupado y confirmar que silenciar Zoom lo arregla',
+        'Añadir traducción al script de transcripción',
+        'Añadir una ruta funcional de entrada por voz a su app de Flask, envuelta en <code>try</code>/<code>except</code>'
       ]
     },
     sections:[
@@ -1543,7 +1540,7 @@ recognizer = sr.<span class="ct2">Recognizer</span>()
       {q:'¿Cuál es el momento de mayor riesgo de seguridad de este módulo?', opts:['Publicar el proyecto en GitHub con el token real del bot todavía en el código','Subir el archivo del modelo entrenado','Instalar tensorflow desde internet','Dejar que el bot guarde imágenes subidas por otras personas'], c:0, fb:'El alumnado está centrado en la parte de IA, y el proyecto contiene ahora un token activo. Comprueba antes de cada subida: un repositorio público con un token que funciona es el peor desenlace posible.'},
       {q:'El script de reconocimiento de voz falla nada más ejecutarse durante tu clase. ¿Qué compruebas primero?', opts:['Si tu micrófono de Zoom está activo — Zoom se queda con el micro, así que silencia y vuelve a ejecutar','Si speech_recognition está instalado','Si el código de idioma es correcto','Si el archivo .wav ya existe'], c:0, fb:'El plan de clase lo señala explícitamente como punto importante: silencia el micrófono en Zoom y reinicia el script.'},
       {q:'¿Por qué try/except llega en M7L4 y no antes en el curso?', opts:['Porque el alumnado acaba de escribir código que de verdad falla a veces —un micrófono ocupado, una llamada de red sin respuesta—, así que el manejo de excepciones resuelve un problema que han vivido','Porque Flask lo exige en todas las rutas','Porque es demasiado avanzado antes de este punto','Porque Jinja no puede renderizar errores'], c:0, fb:'La función de voz a veces produce un error, que es justamente la motivación honesta para try/except: capturar el fallo para que la página no se rompa.'},
-      {q:'¿Por qué el ejemplo de M7L4 usa un enlace con estilo en lugar de un <button> dentro del formulario?', opts:['Un <button> dentro de un formulario envía el formulario, que no es lo que queremos: queremos que se ejecute nuestra función','Los enlaces son más rápidos que los botones','Los botones no se pueden estilar con CSS','Flask no puede recibir clics de botón'], c:0, fb:'La clase te pide que debatáis justamente esto: la etiqueta button dentro de un formulario se encarga de enviar datos, así que el disparador de voz se implementa de otra manera.'},
+      {q:'¿Por qué el ejemplo de M7L4 usa un enlace con estilo en lugar de un <button> dentro del formulario?', opts:['Un <button> dentro de un formulario envía el formulario, que no es lo que queremos: queremos que se ejecute nuestra función','Los enlaces son más rápidos que los botones','Los botones no se pueden estilar con CSS','Flask no puede recibir clics de botón'], c:0, fb:'La clase te pide que debatan justamente esto: la etiqueta button dentro de un formulario se encarga de enviar datos, así que el disparador de voz se implementa de otra manera.'},
       {q:'¿Para qué existe el juego de diez minutos de “encuentra un objeto” entre las dos mitades prácticas de M7L3?', opts:['Para que el alumnado recupere la concentración antes de la segunda práctica — el plan dice explícitamente que no te lo saltes','Para evaluar su vocabulario','Para llenar tiempo si el código termina antes','Para elegir quién presenta su programa'], c:0, fb:'M7L3 tiene sesenta minutos seguidos de práctica. El descanso está en el horario a propósito y el plan te pide que no te lo saltes, y que participes tú también.'}
     ]
   },
@@ -1556,14 +1553,14 @@ recognizer = sr.<span class="ct2">Recognizer</span>()
     practical:{
       intro:'Antes de dar cualquier clase del Módulo 8 del curso, debes haber hecho personalmente:',
       items:[
-        'Explicó Agile y Scrum en voz alta, con sus propias palabras, usando las analogías cotidianas',
-        'Escribió un plan de sprint para una funcionalidad pequeña, dividido en tareas con responsables',
-        'Creó una rama, hizo commits en ella, la fusionó y leyó la salida del merge',
-        'Provocó a propósito un <strong>conflicto</strong> de fusión y lo resolvió, para que no le sorprenda en directo',
-        'Revisó el código de ejemplo con fallos del curso y encontró él mismo los cuatro problemas plantados',
-        'Escribió su propia lista de comprobación de revisión antes de compararla con la del curso',
-        'Instaló la extensión <strong>Live Share</strong> y probó una sesión con un segundo dispositivo o con un compañero',
-        'Refactorizó el código roto de la tarea colaborativa hasta que funcionó'
+        'Explicar Agile y Scrum en voz alta, con sus propias palabras, usando las analogías cotidianas',
+        'Escribir un plan de sprint para una funcionalidad pequeña, dividido en tareas con responsables',
+        'Crear una rama, hacer commits en ella, fusionarla y leer la salida del merge',
+        'Provocar a propósito un <strong>conflicto</strong> de fusión y resolverlo, para que no sorprenda en directo',
+        'Revisar el código de ejemplo con fallos del curso y encontrar uno mismo los cuatro problemas plantados',
+        'Escribir su propia lista de comprobación de revisión antes de compararla con la del curso',
+        'Instalar la extensión <strong>Live Share</strong> y probar una sesión con un segundo dispositivo o con un compañero',
+        'Refactorizar el código roto de la tarea colaborativa hasta que funcione'
       ]
     },
     sections:[
@@ -1578,15 +1575,15 @@ recognizer = sr.<span class="ct2">Recognizer</span>()
       {t:'🏃 L1 — Agile, Scrum y planificación de sprint', cards:[
         {type:'text', h:'Enseña los valores con analogías cotidianas', b:'Párate en los valores de Agile y pide al alumnado que explique cada uno con sus palabras y un ejemplo de la vida diaria. El curso aporta cuatro analogías que funcionan bien con adolescentes, y usarlas gana a definir los términos.'},
         {type:'qa', h:'Los cuatro valores de Agile, tal como los plantea el curso', items:[
-          {k:'Individuos e interacciones por encima de procesos y herramientas', v:'Planear una cena familiar: en lugar de un turno de cocina rígido, habláis de preferencias, decidís quién hace qué y ayudáis a quien se atasca.'},
+          {k:'Individuos e interacciones por encima de procesos y herramientas', v:'Planear una cena familiar: en lugar de un turno de cocina rígido, hablan de preferencias, deciden quién hace qué y ayudan a quien se atasca.'},
           {k:'Software funcionando por encima de documentación exhaustiva', v:'Recoger tu habitación: en vez de planear dónde va cada cosa, empiezas a despejar. La habitación limpia es el objetivo; el camino puede cambiar.'},
-          {k:'Colaboración con el cliente por encima de negociación contractual', v:'Habías quedado con tus amigos y a uno le sale una clase. En lugar de insistir en la hora original, buscáis una que funcione.'},
+          {k:'Colaboración con el cliente por encima de negociación contractual', v:'Habías quedado con tus amigos y a uno le sale una clase. En lugar de insistir en la hora original, buscan una que funcione.'},
           {k:'Responder al cambio por encima de seguir un plan', v:'Habías planeado salir a correr por la mañana y está lloviendo, así que haces yoga en casa en lugar de cancelarlo.'}
         ]},
         {type:'hi', h:'Agile y Scrum, en una imagen', b:'Es la distinción que más se difumina. <strong>Agile es la filosofía</strong>: cómo una familia acuerda convivir en armonía —respeto, flexibilidad, cooperación—. <strong>Scrum son las reglas concretas</strong> para llevarlo a la práctica: quién cocina, quién pone la mesa, quién recoge; los roles, las tareas, las reuniones que lo hacen funcionar. Agile es la idea; Scrum es una forma de darle vida.'},
         {type:'text', h:'Los roles, investigados por el alumnado', b:'Divide el grupo en tres equipos —<strong>Scrum Master</strong>, <strong>Product Owner</strong>, <strong>equipo de desarrollo</strong>— y dales diez minutos con las fuentes que quieran para investigar su rol en el contexto de un proyecto de app móvil. Después cada equipo hace una minipresentación de cinco minutos. Tu trabajo es responder a dudas organizativas y técnicas y construir un buen ambiente. Al terminar, pregunta a quién le <em>gustaría</em> ser Scrum Master o Product Owner, y por qué.'},
         {type:'twocol', left:{h:'Scrum Master', items:['Elimina obstáculos para que el equipo pueda trabajar','Explica Agile y Scrum, sobre todo a quien acaba de llegar','Dirige las reuniones diarias, la planificación y las retrospectivas, y las mantiene productivas','Se asegura de que la gente se sienta segura expresando ideas, y trae a la conversación a quien está más callado','<strong>No dirige</strong>: crea las condiciones para el éxito']}, right:{h:'Product Owner', items:['Reúne requisitos de clientes, responsables y personas usuarias','Construye la lista de tareas y la ordena por prioridad','Escribe las tareas como historias de usuario que el equipo entiende','Define cuándo una tarea cuenta como terminada','Ayuda al equipo a desglosar tareas y a valorar su complejidad']}},
-        {type:'text', h:'Y luego planificad un sprint de verdad', b:'Todo el grupo actúa como un único equipo de desarrollo. Haced una lluvia de ideas sobre “¿qué construiríais si pudierais construir cualquier cosa?”, y después <strong>tú asumes el rol de Product Owner</strong> y les ayudas a planificar un sprint. No planifiquéis el proyecto entero: coged una parte, como un formulario de registro o un menú. Tiempos sugeridos: 5 minutos de lluvia de ideas, 5 minutos con el Product Owner, 15 minutos de planificación, 5 minutos de presentación y comentarios.'},
+        {type:'text', h:'Y luego planificad un sprint de verdad', b:'Todo el grupo actúa como un único equipo de desarrollo. Hagan una lluvia de ideas sobre “¿qué construirían si pudieran construir cualquier cosa?”, y después <strong>tú asumes el rol de Product Owner</strong> y les ayudas a planificar un sprint. No planifiquen el proyecto entero: tomen una parte, como un formulario de registro o un menú. Tiempos sugeridos: 5 minutos de lluvia de ideas, 5 minutos con el Product Owner, 15 minutos de planificación, 5 minutos de presentación y comentarios.'},
         {type:'tip', txt:'El ejemplo desarrollado del plan —un formulario de registro dividido en frontend, backend, infraestructura, pruebas y documentación a lo largo de dos semanas— es mucho más detallado de lo que producirá tu alumnado. Úsalo como referencia propia para provocarles (“¿quién lo prueba? ¿quién lo documenta?”), no como listón que exigirles.'}
       ]},
       {t:'🌳 L2 — Ramas en Git', cards:[
@@ -1625,7 +1622,7 @@ attempt = <span class="cn">0</span>
         <span class="cf">print</span>(<span class="cs">"Tu número es mayor."</span>)     <span class="cc"># 4. sin validación de entrada —</span>
     <span class="ck">elif</span> user_guess &lt; secret:            <span class="cc">#    escribir texto lo tumba</span>
         <span class="cf">print</span>(<span class="cs">"Tu número es menor."</span>)`},
-        {type:'text', h:'La revisión entre compañeros en sí', b:'El alumnado intercambia proyectos, y si no todo el mundo tiene uno listo, no pasa nada: varias personas pueden revisar el mismo proyecto, o recurres al código de ejemplo de arriba. Quince minutos para revisar, entregando el código y sus comentarios en el chat de la tarea. Después presentan lo que han revisado y comentáis juntos la retroalimentación y los problemas encontrados.'},
+        {type:'text', h:'La revisión entre compañeros en sí', b:'El alumnado intercambia proyectos, y si no todo el mundo tiene uno listo, no pasa nada: varias personas pueden revisar el mismo proyecto, o recurres al código de ejemplo de arriba. Quince minutos para revisar, entregando el código y sus comentarios en el chat de la tarea. Después presentan lo que han revisado y comentan juntos la retroalimentación y los problemas encontrados.'},
         {type:'good', txt:'Repite la regla de la retroalimentación constructiva justo antes de que empiecen, no solo durante la teoría. Revisar el código de un compañero es socialmente arriesgado para un adolescente, y la diferencia entre “esto está mal” y “yo renombraría esto para que se entienda mejor” es toda la diferencia entre una clase que funciona y una que daña al grupo.'},
         {type:'tip', txt:'Los deberes dependen de la clase anterior: el alumnado tenía que preparar un proyecto propio para dárselo a un compañero. Recuérdaselo al final de la L2, o media clase llegará sin nada que revisar.'}
       ]},
@@ -1674,15 +1671,15 @@ attempt = <span class="cn">0</span>
     practical:{
       intro:'Antes de dar cualquier clase del Módulo 9 del curso, debes haber hecho personalmente:',
       items:[
-        'Instaló <code>pyttsx3</code> e hizo hablar a su máquina, ajustando velocidad, volumen y voz',
-        'Confirmó qué índices de voz existen realmente en su sistema operativo',
-        'Llamó a <code>wttr.in</code> y recibió una previsión con formato',
-        'Construyó el bot del tiempo que habla en las tres etapas que usa la clase',
-        'Confirmó que la voz sale de la máquina que ejecuta el bot y no de Discord',
-        'Construyó por su cuenta un segundo bot que habla a partir de otra API, para cronometrarse',
-        'Refactorizó él mismo los ejemplos desordenados de impuestos y de puntos de casa antes de leer las soluciones',
-        'Instaló <code>flake8</code>, lo ejecutó sobre su propio código y arregló lo que señaló',
-        'Encontró en su código un problema que flake8 no podía detectar'
+        'Instalar <code>pyttsx3</code> y hacer hablar a su máquina, ajustando velocidad, volumen y voz',
+        'Confirmar qué índices de voz existen realmente en su sistema operativo',
+        'Llamar a <code>wttr.in</code> y recibir una previsión con formato',
+        'Construir el bot del tiempo que habla en las tres etapas que usa la clase',
+        'Confirmar que la voz sale de la máquina que ejecuta el bot y no de Discord',
+        'Construir por su cuenta un segundo bot que habla a partir de otra API, para cronometrarse',
+        'Refactorizar uno mismo los ejemplos desordenados de impuestos y de puntos de casa antes de leer las soluciones',
+        'Instalar <code>flake8</code>, ejecutarlo sobre su propio código y arreglar lo que señale',
+        'Encontrar en su código un problema que flake8 no pueda detectar'
       ]
     },
     sections:[
@@ -1832,13 +1829,13 @@ final_price = total_price + tax
     practical:{
       intro:'Antes de dar cualquier clase del Módulo 10 del curso, debes haber hecho personalmente:',
       items:[
-        'Dirigió una lluvia de ideas hasta una decisión asumida — aunque fuera solo, en papel, para notar la forma que tiene',
-        'Eligió un tipo de proyecto para una idea y escribió por qué encaja ese tipo',
-        'Preparó una presentación de un minuto de un proyecto usando las ocho reglas, y la cronometró',
-        'Escribió una lista de comprobación de pruebas usando los cinco pasos y probó con ella uno de sus propios proyectos',
-        'Clonó un proyecto que no había escrito, montó su entorno y consiguió ejecutarlo',
-        'Escribió una retroalimentación en tres partes —aspectos positivos, errores y recomendaciones— sobre el código de otra persona',
-        'Releyó sus construcciones de los Módulos 5 a 13, porque el alumnado preguntará por cualquiera de ellas'
+        'Dirigir una lluvia de ideas hasta una decisión asumida — aunque sea a solas, en papel, para notar la forma que tiene',
+        'Elegir un tipo de proyecto para una idea y escribir por qué encaja ese tipo',
+        'Preparar una presentación de un minuto de un proyecto usando las ocho reglas, y cronometrarla',
+        'Escribir una lista de comprobación de pruebas usando los cinco pasos y probar con ella uno de sus propios proyectos',
+        'Clonar un proyecto que no haya escrito, montar su entorno y conseguir ejecutarlo',
+        'Escribir una retroalimentación en tres partes —aspectos positivos, errores y recomendaciones— sobre el código de otra persona',
+        'Releer sus construcciones de los Módulos 5 a 13, porque el alumnado preguntará por cualquiera de ellas'
       ]
     },
     sections:[
@@ -1917,11 +1914,11 @@ final_price = total_price + tax
     practical:{
       intro:'Antes del test, ensaya lo que es difícil hacer en frío:',
       items:[
-        'Dijo en voz alta el guion del “no lo sé, vamos a averiguarlo” hasta que sonó natural y no como una disculpa',
-        'Cogió un plan de clase de 90 minutos y escribió su versión individual de 50 minutos',
-        'Calificó un fragmento de código que funciona a medias con los criterios del curso y justificó la nota',
-        'Eligió tres técnicas de reflexión que puede dirigir sin ninguna preparación',
-        'Escribió su propia lista de tareas adicionales para quien termina rápido, por módulo'
+        'Decir en voz alta el guion del “no lo sé, vamos a averiguarlo” hasta que suene natural y no como una disculpa',
+        'Tomar un plan de clase de 90 minutos y escribir su versión individual de 50 minutos',
+        'Calificar un fragmento de código que funciona a medias con los criterios del curso y justificar la nota',
+        'Elegir tres técnicas de reflexión que pueda dirigir sin ninguna preparación',
+        'Escribir su propia lista de tareas adicionales para quien termina rápido, por módulo'
       ]
     },
     sections:[
@@ -1958,7 +1955,7 @@ final_price = total_price + tax
         {type:'warn', txt:'Dos cosas que no hacer, ambas explícitas en los planes: no seas negativo con quien no ha hecho los deberes, y no señales a nadie por no tener equipo o por tener una máquina lenta. Las dos suelen ir de circunstancias en casa y no de esfuerzo.'}
       ]},
       {t:'🎓 Los cinco métodos, bien hechos', cards:[
-        {type:'text', h:'1. Scrum y EduScrum', b:'Se usa a partir de M1L2 y se enseña explícitamente en el Módulo 8 del curso. La clase se divide en <strong>sprints</strong> con límites de tiempo estrictos, cada uno abriendo con un debate corto y cerrando con un balance. Las dos preguntas del balance son fijas: <strong>“¿logramos de verdad el resultado?”</strong> y <strong>“¿cómo nos acerca esto a resolver el problema principal?”</strong>. Las clases de EduScrum más completas añaden una retrospectiva con tres preguntas: qué habéis conseguido y si dio tiempo a todo; qué etapa fue la más difícil; cómo mejoraríais este sprint.'},
+        {type:'text', h:'1. Scrum y EduScrum', b:'Se usa a partir de M1L2 y se enseña explícitamente en el Módulo 8 del curso. La clase se divide en <strong>sprints</strong> con límites de tiempo estrictos, cada uno abriendo con un debate corto y cerrando con un balance. Las dos preguntas del balance son fijas: <strong>“¿logramos de verdad el resultado?”</strong> y <strong>“¿cómo nos acerca esto a resolver el problema principal?”</strong>. Las clases de EduScrum más completas añaden una retrospectiva con tres preguntas: qué consiguieron y si dio tiempo a todo; qué etapa fue la más difícil; cómo mejorarían este sprint.'},
         {type:'text', h:'2. LiveCoding', b:'El tutor construye el código <strong>gradualmente, junto al alumnado</strong>, compartiendo pantalla, para que vean programar como una corriente de pequeñas decisiones y no como un objeto acabado. Habla mientras programas, haz preguntas para mantener el enganche, explica la lógica de cada movimiento, <strong>comete errores a propósito y pide que los encuentren</strong>, no corras, haz pausas para que te alcancen, usa las herramientas de dibujo de Zoom para visualizar la lógica, usa una fuente grande y clara, y escribe en bloques de código para que la estructura se vea.'},
         {type:'text', h:'3. Usar–Modificar–Crear', b:'Se usa en M1L3 y M6L1. El alumnado primero <strong>usa</strong> código que funciona —lo ejecuta, lo ve funcionar, experimenta libremente—, después lo <strong>modifica</strong> mientras tú explicas qué hace cada cambio, y solo entonces <strong>crea</strong> su propia versión. Haz los dos primeros pasos en orden y resiste la tentación de explicar pronto: cinco minutos de “cambia algo y vuelve a ejecutarlo” producen mejores preguntas que cualquier exposición.'},
         {type:'text', h:'4. Metacognición', b:'Se presenta en M2L1 como el “tren de la metacognición”: cinco paradas programadas a lo largo de la clase para enunciar los objetivos; autopreguntarse cómo ayudó el conocimiento previo; identificar las herramientas y estrategias usadas; evaluar si esas estrategias funcionaron; y reflexionar sobre si se trasladan fuera del curso. Lee el cuadernillo del tutor antes de dirigirlo. El movimiento más útil que te da: la frustración de alguien es <strong>información válida sobre la estrategia que eligió</strong>, no una prueba sobre su capacidad.'},
@@ -2013,7 +2010,7 @@ final_price = total_price + tax
         {type:'text', h:'Todas las clases tienen una, y no es “lo mismo pero más rápido”', b:'Cada plan del temario lleva una <strong>variante individual de 50 minutos</strong> con su propia tabla de etapas. La tentación es dar la clase de grupo acelerada. No lo hagas: pierdes 40 minutos, y buena parte de lo que meterías con prisas es justo lo que una sola persona no puede hacer en absoluto.'},
         {type:'twocol', left:{h:'Qué tiene que salir', items:['<strong>Salas de trabajo</strong>: no hay con quien emparejarse','<strong>Competiciones por equipos</strong>: la regla de la media del equipo de M6L2 deja de significar nada','<strong>Revisión y pruebas entre compañeros</strong>: <em>tú</em> pasas a revisar','<strong>Presentaciones al grupo</strong>: se convierten en una conversación contigo','<strong>Juegos que necesitan equipos</strong>: el tres en raya por equipos, el juego de la “pelota”','La mayor parte de las etapas de puesta en común y votación']}, right:{h:'Qué ganas, y deberías usar', items:['<strong>Ritmo realmente ajustado</strong>: sin esperar al más lento ni al más rápido','<strong>Diálogo continuo</strong>: puedes preguntar “¿por qué?” tras cada paso','<strong>Depuración más profunda</strong>: leer bien cada error juntos','<strong>Foco en su propio proyecto</strong>: el marco real se puede elegir a medida','Más tiempo para las tareas adicionales','Retroalimentación inmediata y concreta en lugar de correcciones acumuladas']}},
         {type:'qa', h:'Cómo convertir las etapas colaborativas', items:[
-          {k:'Análisis en pareja → pensar en voz alta', v:'Donde analizarían código por parejas, haz que te narre su razonamiento. El juego “todos contra uno” de M6L1 ya tiene una variante individual en el plan: tú y la persona os turnáis haciéndoos preguntas, sin ganador.'},
+          {k:'Análisis en pareja → pensar en voz alta', v:'Donde analizarían código por parejas, haz que te narre su razonamiento. El juego “todos contra uno” de M6L1 ya tiene una variante individual en el plan: tú y la persona se turnan haciéndose preguntas, sin ganador.'},
           {k:'Revisión entre compañeros → tu revisión, su lista', v:'Revisa <em>tu</em> código deliberadamente defectuoso contra la lista de comprobación. Enseña la misma habilidad y probablemente es más difícil.'},
           {k:'Competición por equipos → contra una referencia', v:'En lugar de ganar a otro equipo, alcanzar un objetivo: “¿puedes pasar el modelo del 90% con esta imagen de prueba?”'},
           {k:'Lluvia de ideas en grupo → provocación estructurada', v:'Una lluvia de ideas en solitario muere rápido. Da categorías y un cronómetro, y aporta ideas tú también: la regla de no criticar sigue valiendo para los dos.'},
@@ -2057,12 +2054,12 @@ final_price = total_price + tax
     practical:{
       intro:'Antes de marcarlo como completado — y desbloquear el DST:',
       items:[
-        'Vio la clase modelo una vez de principio a fin, y luego otra siguiendo la guía de observación',
-        'Anotó, palabra por palabra, las frases que usa esta persona cuando alguien quiere la respuesta',
-        'Enumeró las seis virtudes de impartición de abajo y anotó el momento en el que ocurre cada una',
-        'Encontró las dos etapas que <strong>faltan</strong> en esta clase y escribió las frases que habría dicho en su lugar',
-        'Abrió el plan de la clase M1L2 junto al vídeo y lo comparó con la tabla de etapas',
-        'Repasó sus propias listas <strong>✋ Antes de enseñar esto</strong> de todos los módulos y cerró todo lo que se había saltado'
+        'Ver la clase modelo una vez de principio a fin, y luego otra siguiendo la guía de observación',
+        'Anotar, palabra por palabra, las frases que usa esta persona cuando alguien quiere la respuesta',
+        'Enumerar las seis virtudes de impartición de abajo y anotar el momento en el que ocurre cada una',
+        'Encontrar las dos etapas que <strong>faltan</strong> en esta clase y escribir las frases que habría dicho en su lugar',
+        'Abrir el plan de la clase M1L2 junto al vídeo y compararlo con la tabla de etapas',
+        'Repasar sus propias listas <strong>✋ Antes de enseñar esto</strong> de todos los módulos y cerrar todo lo que se haya saltado'
       ]
     },
     obj:'Ver todo lo del Módulo 15 ejecutado en una clase real, y ver qué pasa cuando dos etapas obligatorias quedan fuera por falta de tiempo. Mira una sesión completa de Python Pro, identifica los comportamientos de impartición que merece la pena copiar, detecta las dos carencias y averigua qué habrías hecho tú de otra manera.',
