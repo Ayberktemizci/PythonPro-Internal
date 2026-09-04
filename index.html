@@ -165,8 +165,29 @@ footer{text-align:center;padding:20px 24px;font-size:11px;color:var(--text2);bor
         <div class="region-cta">Otwórz szkolenie po polsku →</div>
       </a>
 
+
+      <a class="region-card soon" href="it.html" data-lang="it">
+        <span class="soon-badge">In progress</span>
+        <div class="region-flag">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 40" width="46" height="31" style="border-radius:4px"><rect width="20" height="40" fill="#008C45"/><rect x="20" width="20" height="40" fill="#F4F5F0"/><rect x="40" width="20" height="40" fill="#CD212A"/></svg>
+        </div>
+        <div class="region-name">Italiano</div>
+        <div class="region-desc">La formazione per tutor di Python Pro in <strong>italiano</strong>.</div>
+        <div class="region-cta">Apri la formazione in italiano →</div>
+      </a>
+
+      <a class="region-card soon" href="id.html" data-lang="id">
+        <span class="soon-badge">In progress</span>
+        <div class="region-flag">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 40" width="46" height="31" style="border-radius:4px"><rect width="60" height="20" fill="#CE1126"/><rect y="20" width="60" height="20" fill="#fff"/></svg>
+        </div>
+        <div class="region-name">Bahasa Indonesia</div>
+        <div class="region-desc">Pelatihan tutor Python Pro dalam <strong>Bahasa Indonesia</strong>.</div>
+        <div class="region-cta">Buka pelatihan Bahasa Indonesia →</div>
+      </a>
+
     </div><!-- /region-grid -->
-    <p class="soon-note">🌐 Available in English, Türkçe, Português, Español and Polski — pick the language you will teach in.</p>
+    <p class="soon-note">🌐 Pick the language you will teach in. Italiano and Bahasa Indonesia are in progress and open as soon as they are complete.</p>
   </div><!-- /hero-inner -->
 </section>
 
@@ -188,9 +209,14 @@ function toggleTheme(){
   document.getElementById('theme-btn').textContent = next === 'dark' ? '☀️' : '🌙';
 }
 
-/* All five languages are complete and unlocked. If a future language is added,
-   give its card class="region-card soon" plus a <span class="soon-badge">In progress</span>
-   and remove them once assets/content-XX.js is in place. */
+/* Cards marked .soon unlock automatically once their content file exists, so nobody
+   has to remember to edit this page when a translation lands. */
+document.querySelectorAll('.region-card.soon').forEach(card => {
+  const lang = card.dataset.lang;
+  fetch('assets/content-' + lang + '.js', { method: 'HEAD' })
+    .then(r => { if(r.ok){ card.classList.remove('soon'); const b = card.querySelector('.soon-badge'); if(b) b.remove(); } })
+    .catch(() => {});
+});
 });
 </script>
 </body>
